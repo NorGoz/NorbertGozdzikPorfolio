@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+
+    min-height: 100vh;
+}
+.home{
+   min-height:100vh;
+    background-image: url("images/backgroundForPort.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home__background{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    /*opacity: 0.7;*/
+}
+
+section{
+    min-height: 100vh;
+}
+h2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 45px;
+    color: #00986f;
+
+}
