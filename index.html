@@ -5,27 +5,150 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Norbert Goździk - Portfolio Webdeveloper JavaScript</title>
+    <script src="https://kit.fontawesome.com/92bb430a42.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
 <div class="page">
+<!--  HOME  -->
     <section id='home' class="home">
         <div class="home__background">
-            <h2>Witam</h2>
+           <div class="home__container">
+               <h3 class="home__welcome ">Witaj!</h3>
+               <h2 class="home__name ">Jestem <span class="home__name mainColor">Norbert Goździk</span></h2>
+               <h2 class="home__job ">Web developer - freelancer</h2>
+               <div class="home__btn">Zobacz moje portfolio <i class="fas fa-arrow-right"></i></div>
+           </div>
         <nav class="home__menu">
             <ul class="home__lists">
-                <li class="home__item"><a href="#" class="home__link">home</a></li>
-                <li class="home__item"><a href="#" class="home__link">projects</a></li>
-                <li class="home__item"><a href="#" class="home__link">about me</a></li>
-                <li class="home__item"><a href="#" class="home__link">contact</a></li>
+                <li class="home__item"><a href="#" class="home__link">Strona Główna</a></li>
+                <li class="home__item"><a href="#" class="home__link">o mnie</a></li>
+                <li class="home__item"><a href="#" class="home__link">Projekty</a></li>
+                <li class="home__item"><a href="#" class="home__link">Kontakt</a></li>
             </ul>
+            <i class="fas fa-bars"></i>
         </nav>
         </div>
     </section>
-    <section id="projects" class="projects"></section>
-    <section id="aboutMe" class="aboutMe"></section>
-    <section id="contact" class="contact"></section>
+<!-- ABOUT ME-->
+    <section id="aboutMe" class="aboutMe">
+        <div class="aboutMe__container">
+            <div class="abouteMe__title">
+                Tworzę bardzo dobre strony internetowe
+            </div>
+            <div class="aboutMe__webNote">
+                <div class="webNote__modern">
+                    <img src="./images/services1.png" alt="Photo html css js">
+                    <h2 class="webNote__txt">Nowoczesne i zgodne z aktualnymi standardami</h2>
+                </div>
+                <div class="webNote__search">
+                    <img src="./images/services2.png" alt="Photo html css js">
+                    <h2 class="webNote__txt">Nowoczesne i zgodne z aktualnymi standardami</h2>
+                </div>
+                <div class="webNote__responsive">
+                    <img src="./images/services3.png" alt="Photo html css js">
+                    <h2 class="webNote__txt">Nowoczesne i zgodne z aktualnymi standardami</h2>
+                </div>
+            </div>
+            <div class="abouteMe__me">
+                <div class="me__note">
+                    <img src="./images/NG.jpg" alt="Me">
+                    <h2 class="me__title">Kim jestem?</h2>
+                    <p class="me__txt">Jestem full stack developer'em. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Itaque libero minima nihil rem similique! Adipisci architecto assumenda
+                        at ea est incidunt iusto molestiae officia placeat, quae quam quas quibusdam, sit.</p>
+                </div>
+                <div class="me__skils">
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">CSS</div>
+                        </div>
+                        70%
+                    </div>
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">SASS</div>
+                        </div>
+                        60%
+                    </div>
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">HTML</div>
+                        </div>
+                        70%
+                    </div>
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">JavaScript</div>
+                        </div>
+                        70%
+                    </div>
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">Node.js</div>
+                        </div>
+                        70%
+                    </div>
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">React</div>
+                        </div>
+                        70%
+                    </div>
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">Express.js</div>
+                        </div>
+                        70%
+                    </div>
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">TypeScript</div>
+                        </div>
+                        70%
+                    </div>
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">MySQL</div>
+                        </div>
+                        70%
+                    </div>
+                    <div class="skils__skil">
+                        <div class="skils__color">
+                            <div class="skils__name">MongoDB</div>
+                        </div>
+                        70%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--  PORTFOLIO  -->
+    <section id="projects" class="projects">
+        <h2 class="projects__title">Projekty</h2>
+        <div class="projects__container">
+            <div class="project">1</div>
+            <div class="project">2</div>
+            <div class="project">3</div>
+        </div>
+    </section>
+<!--  CONTACT  -->
+    <section id="contact" class="contact">
+        <div class="contact__container">
+            <h2 class="contact__title">Kontakt</h2>
+            <form action="#" class="contact__form">
+                <input type="text" name="name" placeholder="Imię">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Twój tekst" cols="30" rows="10"></textarea>
+                <input type="submit" class="button" value="SUBMIT">
+            </form>
+        </div>
+    </section>
+    <footer class="footer"></footer>
 </div>
-
+<script src="src/routeArrow.js"></script>
 </body>
 </html>
