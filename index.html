@@ -29,7 +29,7 @@
                 <li class="home__item"><a href="#" class="home__link">Projekty</a></li>
                 <li class="home__item"><a href="#" class="home__link">Kontakt</a></li>
             </ul>
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars hamburger"></i>
         </nav>
         </div>
     </section>
@@ -39,88 +39,81 @@
             <div class="abouteMe__title">
                 Tworzę bardzo dobre strony internetowe
             </div>
-            <div class="aboutMe__webNote">
-                <div class="webNote__modern">
+            <div class="abouteMe__line"></div>
+            <div class="aboutMe__webNotes">
+                <div class="webNote">
                     <img src="./images/services1.png" alt="Photo html css js">
                     <h2 class="webNote__txt">Nowoczesne i zgodne z aktualnymi standardami</h2>
                 </div>
-                <div class="webNote__search">
+                <div class="webNote">
                     <img src="./images/services2.png" alt="Photo html css js">
-                    <h2 class="webNote__txt">Nowoczesne i zgodne z aktualnymi standardami</h2>
+                    <h2 class="webNote__txt">Zoptymalizowane pod kątem wyszukiwarek internetowych</h2>
                 </div>
-                <div class="webNote__responsive">
+                <div class="webNote">
                     <img src="./images/services3.png" alt="Photo html css js">
-                    <h2 class="webNote__txt">Nowoczesne i zgodne z aktualnymi standardami</h2>
+                    <h2 class="webNote__txt">Świetnie wyglądające na urządzeniach mobilnych</h2>
                 </div>
             </div>
             <div class="abouteMe__me">
                 <div class="me__note">
-                    <img src="./images/NG.jpg" alt="Me">
+                    <div class="me__photot"></div>
                     <h2 class="me__title">Kim jestem?</h2>
                     <p class="me__txt">Jestem full stack developer'em. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Itaque libero minima nihil rem similique! Adipisci architecto assumenda
                         at ea est incidunt iusto molestiae officia placeat, quae quam quas quibusdam, sit.</p>
                 </div>
+                <div class="skils__txt">Technologie które znam</div>
+                <div class="skils__line"></div>
                 <div class="me__skils">
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">CSS</div>
                         </div>
-                        70%
                     </div>
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">SASS</div>
                         </div>
-                        60%
                     </div>
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">HTML</div>
                         </div>
-                        70%
                     </div>
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">JavaScript</div>
                         </div>
-                        70%
                     </div>
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">Node.js</div>
                         </div>
-                        70%
                     </div>
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">React</div>
                         </div>
-                        70%
                     </div>
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">Express.js</div>
                         </div>
-                        70%
                     </div>
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">TypeScript</div>
                         </div>
-                        70%
                     </div>
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">MySQL</div>
                         </div>
-                        70%
                     </div>
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">MongoDB</div>
                         </div>
-                        70%
                     </div>
                 </div>
             </div>
@@ -129,26 +122,44 @@
 <!--  PORTFOLIO  -->
     <section id="projects" class="projects">
         <h2 class="projects__title">Projekty</h2>
+        <div class="projects__line"></div>
         <div class="projects__container">
-            <div class="project">1</div>
-            <div class="project">2</div>
-            <div class="project">3</div>
+            <div class="project photoWeb"><div id="photoWeb" class="projectDescription activeFlex">
+                <div class="projectTitle">projekrt 1</div>
+                <div class="projectLink">Zobacz więcej</div>
+            </div></div>
+            <div class="project warriorGame"><div id="warriorGame" class="projectDescription">
+                <div class="projectTitle">projekrt 2</div>
+                <div class="projectLink">Zobacz więcej</div>
+            </div></div>
+            <div class="project blackJack"><div id="blackJack" class="projectDescription">
+                <div class="projectTitle">projekrt 3</div>
+                <div class="projectLink">Zobacz więcej</div>
+            </div></div>
         </div>
     </section>
 <!--  CONTACT  -->
     <section id="contact" class="contact">
         <div class="contact__container">
             <h2 class="contact__title">Kontakt</h2>
+            <div class="contact__line"></div>
             <form action="#" class="contact__form">
-                <input type="text" name="name" placeholder="Imię">
-                <input type="email" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Twój tekst" cols="30" rows="10"></textarea>
-                <input type="submit" class="button" value="SUBMIT">
+                <input class="input" type="text" name="name" placeholder="Twoje imię">
+                <input class="input" type="email" name="email" placeholder="e-mail">
+                <textarea class="input" name="message" placeholder="treść wiadomości" cols="30" rows="10"></textarea>
+                <input class="contact__btn" type="submit" class="button" value="WYŚLIJ">
             </form>
+            <div class="contact__socialMedia">
+                <a href="#" class="contact__link"><img class="contact__img" src="./images/contact1.png" alt="e-mail"><span class="contact__info">norbert1303@wp.pl</span></a>
+                <a href="#" class="contact__link"><img class="contact__img" src="./images/contact2.png" alt="e-mail"><span class="contact__info">662 225 277</span></a>
+                <a href="" class="contact__link"><img class="contact__img" src="./images/contact3.png" alt="e-mail"><span class="contact__info">Norbert Goździk</span></a>
+                <a href="https://www.linkedin.com/in/norbert-go%C5%BAdzik-78b191207/" class="contact__link"><img class="contact__img" src="./images/contact5.png" alt="e-mail"><span class="contact__info">Norbert Goździk</span></a>
+            </div>
         </div>
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer"> © 2021 Norbert Goździk</footer>
 </div>
 <script src="src/routeArrow.js"></script>
+<script src="src/activeFlex.js"></script>
 </body>
 </html>

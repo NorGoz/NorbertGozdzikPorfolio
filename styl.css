@@ -45,26 +45,26 @@ section{
 
 .home__welcome {
 color: white;
-    font-size: 5vh;
+    font-size: 13vw;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .home__name {
     color: #fff;
-    font-size: 4vh;
+    font-size: 7vw;
     font-weight: normal;
 }
 
 .home__job {
     color: white;
-    font-size: 3vh;
+    font-size: 5vw;
     font-weight: lighter;
     margin-bottom: 20px;
 }
 .home__btn{
     padding: 10px 15px;
-    font-size: 2vh;
+    font-size: 3vw;
     border: 1px solid white;
     text-transform: uppercase;
     color: white;
@@ -87,46 +87,46 @@ color: white;
 /*nav*/
 .home__menu{
     background-color: #1d2026;
-    border-radius: 10%;
     position: absolute;
     width: 100%;
-    bottom: -1%;
-    right: 0%;
+    bottom: -50px;
+    right: 0;
+    height: 50px;
+    border-bottom: solid 3px #00986f;
+}
+.fa-bars{
+    position: absolute;
+    font-size: 29px;
+    line-height: 25px;
+    top:23%;
+    right: 6vw;
+    color: white;
+    z-index: 2;
 }
 .home__lists {
+    margin-top: 50px;
     list-style: none;
-    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    display: none;
+
 }
+
 .home__link {
     text-decoration: none;
     color: white;
-    float: right;
+    display: block;
+    padding: 10px 15px;
+    text-transform: uppercase;
 
 }
 
 
-@media(orientation: portrait){
 
-}
-@media(orientation: portrait) and (min-width: 280px) and (max-width: 300px){
 
-}
 
-@media(orientation: portrait) and (min-width: 360px){
-
-}
-@media(orientation: portrait) and (min-width: 375px) and (min-height: 812px){
-
-}
-
-@media(orientation: portrait) and (min-width: 411px) and (min-height: 823px){
-
-}
-@media(orientation: portrait) and (min-width: 540px) {
-
-}
 @media(orientation: portrait) and (min-width: 768px){
-
+/* ul w menu zmienic zeby juz nie byl hamburger */
 }
 
 @media(orientation: portrait) and (min-width: 1024px){
@@ -143,9 +143,266 @@ color: white;
 }
 /*about me*/
 .aboutMe{
-    /*background-color: #1d2026;*/
+    width: 90%;
+    margin: 0 auto;
+}
+.aboutMe__container{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+img{
+    width: 100%;
+}
+.abouteMe__title{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.abouteMe__line{
+    width: 50vw;
+    height: 5px;
+    background-color: #1d2026;
+    align-self: center;
+    margin-bottom: 50px;
+}
+.aboutMe__webNotes{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+.webNote {
+    margin-bottom: 10px;
+}
+.webNote__txt{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.me__photot{
+    margin: 0 auto;
+    height: 70vw;
+    width: 70vw;
+    border-radius: 50%;
+    background-image: url("./images/NGSMALL.jpg");
+    background-size: 100% 99%;
+    background-position: center;
+}
+.me__title{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.me__txt{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+.me__skils{
+    width: 90%;
+    margin: 30px auto;
+
+}
+.skils__txt{
+    text-align: center;
+    font-size: 21px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.skils__line{
+    width: 60vw;
+    height: 5px;
+    background-color: #1d2026;
+    align-self: center;
+    margin: 0 auto;
+}
+.skils__skil{
+    display: flex;
+    justify-content: space-between;
+    /*background-color: #dddddd;*/
+    height: 25px;
+    margin: 10px;
+    font-size: 12px;
+    line-height: 25px;
+    /*padding-right: 5px;*/
+
+}
+.skils__color{
+    flex-basis: 100%;
+    background-color: #01a1a7;
+}
+.skils__name{
+    font-size: 10px;
+    width: 30%;
+    line-height: 25px;
+    color: white;
+    height: 100%;
+    background-color: #04c2c9;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*portfolio*/
+.projects{
+    background-color: #eee;
+    margin-top: 30px ;
+    min-height: 100vh;
+}
+.projects__title{
+    padding-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.projects__line{
+    width: 40vw;
+    height: 5px;
+    background-color: #1d2026;
+    align-self: center;
+    margin: 10px auto;
+}
+.projects__container{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.project{
+    height:50vh;
+    width: 100%;
+}
+.warriorGame{
+    background-image: url("./images/NG.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.photoWeb{
+    background-image: url("./images/NG.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.blackJack{
+    background-image: url("./images/NG.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.projectDescription{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+}
+.projectTitle{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+.projectLink{
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-size: 12px;
+    border: solid 1px #00986f;
+    width: 50vw;
+    margin: 0 auto;
+    transition: 0.3s;
+
+}
+.projectLink:hover{
+    background-color: #00986f;
+    color: white;
+}
+/*contact*/
+
+.contact{
+    background-color: #252934;
+    padding-top: 50px;
+}
+.contact__container{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.contact__title{
+    text-align: center;
+    font-size:36px;
+    color: white;
+}
+.contact__line{
+    width: 30vw;
+    height: 5px;
+    background-color: white;
+    align-self: center;
+    margin: 10px auto;
+}
+.contact__form{
+    margin: 30px 30px 0px 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    font-size: 14px;
+    padding: 10px 5px;
+    background-color: #1d2026;
+    color: #eeeeee;
+    border: none;
+    margin: 5px;
+}
+.contact__btn{
+    font-size: 14px;
+    color: white;
+    border: white solid 1px;
+    width: 50%;
+    margin: 5px;
+    padding: 10px 5px;
+    background-color: #1d2026;
+    align-self: end;
+}
+.contact__socialMedia{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.contact__img{
+    width: 60px;
+    padding-right: 20px;
+}
+.contact__link{
+    position: relative;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.contact__info{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(0,-50%);
+}
+.footer{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+
 }
 
 .mainColor{
     color: #00986f;
+
+
+}
+.activeFlex {
+    display: flex;
 }
