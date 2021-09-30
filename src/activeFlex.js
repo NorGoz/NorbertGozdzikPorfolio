@@ -1,7 +1,9 @@
 const hamburgerBtn = document.querySelector('.hamburger');
 const navigationList = document.querySelector('.home__lists');
+
 hamburgerBtn.addEventListener('click',()=>{
     navigationList.classList.toggle('activeFlex')
+
 })
 
 const projects = document.querySelectorAll('.project');

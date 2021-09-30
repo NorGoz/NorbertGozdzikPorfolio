@@ -47,12 +47,16 @@ function showPhoto(imgElement){
     if(imgElement.classList.contains('portfolioImg')){
         if(index >= portfolioImg.length){
             index = 0;
+        }else if(index < 0){
+            index = portfolioImg.length-1;
         }
         img.src = portfolioImg[index];
     }
     if(imgElement.classList.contains('photoWebImg')){
         if(index >= photoWebImg.length){
             index = 0;
+        }else if(index < 0){
+            index = photoWebImg.length-1;
         }
         img.src = photoWebImg[index];
     }
