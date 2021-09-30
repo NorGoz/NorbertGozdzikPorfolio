@@ -24,11 +24,11 @@ function changeModal(){
     if(!modalWrap.classList.contains('activeModal')){
         modalWrap.classList.add('activeModal')
     }else {
-        reset()
+        resetPopUp()
     }
 
 }
-function reset(){
+function resetPopUp(){
     modalWrap.classList.remove('activeModal');
     exitBtn.removeEventListener('click',changeModal)
     arrow.forEach(item => item.removeEventListener('click',changePhoto))
