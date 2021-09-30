@@ -7,8 +7,8 @@ hamburgerBtn.addEventListener('click',()=>{
 const projects = document.querySelectorAll('.project');
 const projectView = document.querySelectorAll('.projectDescription');
 const photoWeb = document.getElementById('photoWeb');
-const warriorGame = document.getElementById('warriorGame');
-const blackJack = document.getElementById('blackJack');
+const portfolioElement = document.getElementById('portfolio');
+
 
 function checkActiveClass(){
         projectView.forEach( item => {
@@ -21,19 +21,17 @@ function checkActiveClass(){
 }
 
 for (const project of projects) {
-    project.addEventListener('click',() => {
+    project.addEventListener('mouseover',() => {
         if(event.target.classList.contains('project') || event.target.classList.contains('projectDescription')) {
 
             if (!event.target.classList.contains('activeFlex')) {
                 checkActiveClass();
             }
 
-            if (event.target.classList.contains('warriorGame')) {
-                warriorGame.classList.add('activeFlex')
+            if (event.target.classList.contains('portfolio')) {
+                portfolioElement.classList.add('activeFlex')
             } else if (event.target.classList.contains('photoWeb')) {
                 photoWeb.classList.add('activeFlex')
-            } else if (event.target.classList.contains('blackJack')) {
-                blackJack.classList.add('activeFlex')
             }
         }
     })

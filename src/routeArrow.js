@@ -1,8 +1,8 @@
 const homeBtn = document.querySelector('.home__btn');
-const arrow = document.querySelector('.fa-arrow-right');
+const arrowHome = document.querySelector('.fa-arrow-right');
 homeBtn.addEventListener('mouseover',()=>{
-    arrow.classList.add('routeArrow');
+    arrowHome.classList.add('routeArrow');
 })
 homeBtn.addEventListener('mouseout',()=>{
-    arrow.classList.remove('routeArrow')
+    arrowHome.classList.remove('routeArrow')
 })

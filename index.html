@@ -24,10 +24,10 @@
            </div>
         <nav class="home__menu">
             <ul class="home__lists">
-                <li class="home__item"><a href="#" class="home__link">Strona Główna</a></li>
-                <li class="home__item"><a href="#" class="home__link">o mnie</a></li>
-                <li class="home__item"><a href="#" class="home__link">Projekty</a></li>
-                <li class="home__item"><a href="#" class="home__link">Kontakt</a></li>
+                <li class="home__item"><a href="#home" class="home__link">Strona Główna</a></li>
+                <li class="home__item"><a href="#aboutMe" class="home__link">o mnie</a></li>
+                <li class="home__item"><a href="#projects" class="home__link">Projekty</a></li>
+                <li class="home__item"><a href="#contact" class="home__link">Kontakt</a></li>
             </ul>
             <i class="fas fa-bars hamburger"></i>
         </nav>
@@ -36,35 +36,37 @@
 <!-- ABOUT ME-->
     <section id="aboutMe" class="aboutMe">
         <div class="aboutMe__container">
-            <div class="abouteMe__title">
+            <div class="aboutMe__title title">
                 Tworzę bardzo dobre strony internetowe
             </div>
-            <div class="abouteMe__line"></div>
+            <div class="aboutMe__line line"></div>
             <div class="aboutMe__webNotes">
                 <div class="webNote">
-                    <img src="./images/services1.png" alt="Photo html css js">
+                    <img class="webNote__img" src="./images/services1.png" alt="Photo html css js">
                     <h2 class="webNote__txt">Nowoczesne i zgodne z aktualnymi standardami</h2>
                 </div>
                 <div class="webNote">
-                    <img src="./images/services2.png" alt="Photo html css js">
+                    <img class="webNote__img" src="./images/services2.png" alt="Photo html css js">
                     <h2 class="webNote__txt">Zoptymalizowane pod kątem wyszukiwarek internetowych</h2>
                 </div>
                 <div class="webNote">
-                    <img src="./images/services3.png" alt="Photo html css js">
+                    <img class="webNote__img" src="./images/services3.png" alt="Photo html css js">
                     <h2 class="webNote__txt">Świetnie wyglądające na urządzeniach mobilnych</h2>
                 </div>
             </div>
-            <div class="abouteMe__me">
+            <div class="aboutMe__me">
                 <div class="me__note">
-                    <div class="me__photot"></div>
+                    <div class="me__photo"></div>
                     <h2 class="me__title">Kim jestem?</h2>
-                    <p class="me__txt">Jestem full stack developer'em. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Itaque libero minima nihil rem similique! Adipisci architecto assumenda
-                        at ea est incidunt iusto molestiae officia placeat, quae quam quas quibusdam, sit.</p>
+                    <p class="me__txt">Jestem web developer'em. Który pragnie rozwijać swoje umiejętności full stack.
+                        Jestem cichi, pewny siebie, ciekawski. Nieustannie pracuję nad poprawą moich umiejętności.
+                        Z pewnością jest jeszcze więcej do nauczenia się, jeszcze więcej problemów do rozwiązania
+                        i jeszcze więcej do zbudowania. Jestem za to bardzo wdzięczny </p>
                 </div>
-                <div class="skils__txt">Technologie które znam</div>
-                <div class="skils__line"></div>
+
                 <div class="me__skils">
+                    <div class="skils__txt title">Technologie które znam  <div class="skils__line"></div></div>
+
                     <div class="skils__skil">
                         <div class="skils__color">
                             <div class="skils__name">CSS</div>
@@ -95,54 +97,63 @@
                             <div class="skils__name">React</div>
                         </div>
                     </div>
-                    <div class="skils__skil">
-                        <div class="skils__color">
-                            <div class="skils__name">Express.js</div>
-                        </div>
-                    </div>
-                    <div class="skils__skil">
-                        <div class="skils__color">
-                            <div class="skils__name">TypeScript</div>
-                        </div>
-                    </div>
-                    <div class="skils__skil">
-                        <div class="skils__color">
-                            <div class="skils__name">MySQL</div>
-                        </div>
-                    </div>
-                    <div class="skils__skil">
-                        <div class="skils__color">
-                            <div class="skils__name">MongoDB</div>
-                        </div>
-                    </div>
+<!--                    <div class="skils__skil">-->
+<!--                        <div class="skils__color">-->
+<!--                            <div class="skils__name">Express.js</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="skils__skil">-->
+<!--                        <div class="skils__color">-->
+<!--                            <div class="skils__name">TypeScript</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="skils__skil">-->
+<!--                        <div class="skils__color">-->
+<!--                            <div class="skils__name">MySQL</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="skils__skil">-->
+<!--                        <div class="skils__color">-->
+<!--                            <div class="skils__name">MongoDB</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>
     </section>
 <!--  PORTFOLIO  -->
     <section id="projects" class="projects">
-        <h2 class="projects__title">Projekty</h2>
-        <div class="projects__line"></div>
+        <h2 class="projects__title title">Projekty</h2>
+        <div class="projects__line line"></div>
         <div class="projects__container">
-            <div class="project photoWeb"><div id="photoWeb" class="projectDescription activeFlex">
+            <div class="project photoWeb"><div id="photoWeb" class="projectDescription">
                 <div class="projectTitle">projekrt 1</div>
                 <div class="projectLink">Zobacz więcej</div>
             </div></div>
-            <div class="project warriorGame"><div id="warriorGame" class="projectDescription">
-                <div class="projectTitle">projekrt 2</div>
+            <div class="project portfolio"><div id="portfolio" class="projectDescription">
+                <div class="projectTitle">Portfolio</div>
                 <div class="projectLink">Zobacz więcej</div>
             </div></div>
-            <div class="project blackJack"><div id="blackJack" class="projectDescription">
-                <div class="projectTitle">projekrt 3</div>
-                <div class="projectLink">Zobacz więcej</div>
-            </div></div>
+<!--            <div class="project blackJack"><div id="blackJack" class="projectDescription">-->
+<!--                <div class="projectTitle">projekrt 3</div>-->
+<!--                <div class="projectLink">Zobacz więcej</div>-->
+<!--            </div></div>-->
+        </div>
+        <div class="modal__wrap">
+            <div class="modal">
+                <div class="modal__photo"><div class="left arrow"><i class="fas fa-arrow-left"></i></div><div class="right arrow"><i class="fas fa-arrow-right"></i></div></div>
+                <div class="modal__title"></div>
+                <div class="modal__line"></div>
+                <div class="modal__txt"></div>
+                <div class="modal__buttons"><a href="" class="modal__web">zobacz</a> <button class="modal__btn">x</button></div>
+            </div>
         </div>
     </section>
 <!--  CONTACT  -->
     <section id="contact" class="contact">
         <div class="contact__container">
-            <h2 class="contact__title">Kontakt</h2>
-            <div class="contact__line"></div>
+            <h2 class="contact__title title">Kontakt</h2>
+            <div class="contact__line line"></div>
             <form action="#" class="contact__form">
                 <input class="input" type="text" name="name" placeholder="Twoje imię">
                 <input class="input" type="email" name="email" placeholder="e-mail">
@@ -157,9 +168,12 @@
             </div>
         </div>
     </section>
-    <footer class="footer"> © 2021 Norbert Goździk</footer>
+    <footer class="footer"><a href="#home" class="footer__btn"><i class="fas fa-angle-double-up"></i></a>
+        © 2021 Norbert Goździk</footer>
 </div>
 <script src="src/routeArrow.js"></script>
 <script src="src/activeFlex.js"></script>
+<script src="src/scrolEvent.js"></script>
+<script src="src/popUp.js"></script>
 </body>
 </html>
