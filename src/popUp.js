@@ -10,7 +10,6 @@ const modalPhoto = document.querySelector('.modal__photo')
 const portfolioImg=["./images/portfolio1.png","./images/portfolio2.png","./images/portfolio3.png","./images/portfolio4.png"];
 const portfolioTxt='Najtrudniejsze w tym projekcie było wymyślenie sturktury. Projekt zrobiony z pomaca JavaScriptu i CSS ';
 const portfolioLink ='';
-const blacJackImg =[];
 const photoWebImg =["./images/services1.png","./images/services2.png","./images/services3.png"];
 const photoWebTxt =' simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr';
 
