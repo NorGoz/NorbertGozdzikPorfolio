@@ -8,9 +8,9 @@ hamburgerBtn.addEventListener('click',()=>{
 
 const projects = document.querySelectorAll('.project');
 const projectView = document.querySelectorAll('.projectDescription');
-const photoWeb = document.getElementById('photoWeb');
-const portfolioElement = document.getElementById('portfolio');
 
+const portfolioElement = document.getElementById('portfolio');
+const flashCard = document.getElementById('flashCard');
 
 function checkActiveClass(){
         projectView.forEach( item => {
@@ -32,8 +32,8 @@ for (const project of projects) {
 
             if (event.target.classList.contains('portfolio')) {
                 portfolioElement.classList.add('activeFlex')
-            } else if (event.target.classList.contains('photoWeb')) {
-                photoWeb.classList.add('activeFlex')
+            }else if (event.target.classList.contains('flashCard')){
+                flashCard.classList.add('activeFlex')
             }
         }
     })

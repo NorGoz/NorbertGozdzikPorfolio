@@ -156,12 +156,15 @@ color: white;
     font-size: 3vw;
     border: 1px solid white;
     text-transform: uppercase;
-    color: white;
     width: 60vw;
     text-align: center;
     transition: 0.3s;
     cursor: pointer;
 
+}
+.home__btn a{
+    text-decoration: none;
+    color: white;
 }
 .home__btn:hover{
 
@@ -368,6 +371,11 @@ img{
 }
 .photoWeb{
     background-image: url("./images/services2.png");
+    background-size: cover;
+    background-position: center;
+}
+.flashCard{
+    background-image: url("./images/flashCardView.png");
     background-size: cover;
     background-position: center;
 }

@@ -5,13 +5,18 @@ const projectTitle = document.querySelector('.modal__title');
 const projectTxt = document.querySelector('.modal__txt');
 const formForButtons = document.querySelector('.modal__buttons');
 const exitBtn  = document.querySelector('.modal__btn');
-const modalPhoto = document.querySelector('.modal__photo')
+const modalPhoto = document.querySelector('.modal__photo');
+const modalWeb = document.querySelector('.modal__web');
 
 const portfolioImg=["./images/portfolio1.png","./images/portfolio2.png","./images/portfolio3.png","./images/portfolio4.png"];
 const portfolioTxt='Najtrudniejsze w tym projekcie było wymyślenie sturktury. Projekt zrobiony z pomaca JavaScriptu i CSS ';
-const portfolioLink ='';
-const photoWebImg =["./images/services1.png","./images/services2.png","./images/services3.png"];
-const photoWebTxt =' simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr';
+const portfolioLink ='https://norgoz.github.io/NorbertGozdzikPorfolio/';
+const flashCardImg=["./images/flashCardView.png","./images/learn.png","./images/learnEND.png","./images/add.png","./images/add.png"];
+const flashCardTxt = 'Najtrudniejsze w projekcie flashcard było dla mnie stworzenie logiki. ' +
+    'Nie jest ona najlepsza ale cały czas się ucze i staram się poprawiać stare błędy. Projek został zrobiony z pomoca reacta oraz expressa.' +
+    'Inspiracją były dla różne darmowe fiszki w internecie, zawsze coś mi w nich przeszkadzało więc postanowiłem napisać swój projekt do tego.';
+const flashCardLink ='https://github.com/NorGoz/Flashcard-Project';
+
 
 
 
@@ -34,6 +39,7 @@ function resetPopUp(){
     arrow.forEach(item => item.removeEventListener('click',changePhoto))
     img.classList.remove('portfolioImg');
     img.classList.remove('photoWebImg');
+    img.classList.remove('flashCard');
     index = 0;
 }
 function offModal(){
@@ -52,13 +58,13 @@ function showPhoto(imgElement){
         }
         img.src = portfolioImg[index];
     }
-    if(imgElement.classList.contains('photoWebImg')){
-        if(index >= photoWebImg.length){
+    if(imgElement.classList.contains('flashCard')){
+        if(index >= flashCardImg.length){
             index = 0;
         }else if(index < 0){
-            index = photoWebImg.length-1;
+            index = flashCardImg.length-1;
         }
-        img.src = photoWebImg[index];
+        img.src = flashCardImg[index];
     }
 }
 
@@ -76,12 +82,14 @@ function chooseProject(projectName){
         showPhoto(img);
         projectTitle.textContent = 'Portfolio';
         projectTxt.textContent = portfolioTxt;
+        modalWeb.href=portfolioLink;
 
-    }else if(projectName === 'photoWeb'){
-        img.classList.add('photoWebImg');
+    }else if(projectName === 'flashCard'){
+        img.classList.add('flashCard');
         showPhoto(img);
-        projectTitle.textContent = 'Photo Web';
-        projectTxt.textContent = photoWebTxt;
+        projectTitle.textContent = 'Flashcard Project';
+        projectTxt.textContent = flashCardTxt;
+        modalWeb.href=flashCardLink;
     }
 }
 
